@@ -2681,11 +2681,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 75px;
 }
 
+
 @media (max-width: 1024px) {
   .home-about-area .about-right {
     padding: 15px;
+    
+    
   }
+  
 }
+
 
 .home-about-area .about-right h4 {
   font-size: 18px;
@@ -2718,6 +2723,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  
 }
 
 .services-area .single-service .lnr {
@@ -2748,6 +2754,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .services-area .single-service:hover .lnr {
   color: #f9d700;
 }
+
+
 
 @media (max-width: 991px) {
   .services-area .single-service {
@@ -3831,13 +3839,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*  Contact Page Styles
 /* =================================== */
 .contact-page-area .map-wrap {
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   text-align: center;
 }
 
 @media (max-width: 991px) {
   .contact-page-area .map-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 }
 
@@ -3888,11 +3896,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 991px) {
   .contact-page-area .address-wrap {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 
 .contact-page-area .address-wrap .single-contact-address {
+  margin-top: 10px;
   margin-bottom: 8px;
 }
 
@@ -3900,6 +3909,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 300;
   font-size: 16px;
   margin-bottom: 5px;
+  
 }
 
 .contact-page-area .address-wrap .single-contact-address .lnr {
@@ -3907,6 +3917,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 500;
   color: #f9d700;
   margin-right: 30px;
+  
+  
 }
 
 /* =================================== */
