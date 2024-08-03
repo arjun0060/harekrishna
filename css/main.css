@@ -3839,23 +3839,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*  Contact Page Styles
 /* =================================== */
 .contact-page-area .map-wrap {
-  margin-bottom: 300px;
+  margin-bottom: 150px;
   text-align: center;
 }
 
-@media (max-width: 991px) {
-  .contact-page-area .map-wrap {
-    margin-bottom: 150px;
-  }
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .contact-page-area .contact-btns {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   grid-area: span;
 }
 
@@ -3864,19 +3866,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact-page-area .form-area input {
-  padding: 15px;
+  padding: 12px;
 }
 
 .contact-page-area .form-area input,
 .contact-page-area .form-area textarea {
   border-radius: 0;
-  font-size: 12px;
+  font-size: 14px;
+  width: 100%;
 }
 
 .contact-page-area .form-area textarea {
-  height: 190px;
+  height: 150px;
   margin-top: 0px;
-  padding: 15px;
+  padding: 12px;
 }
 
 .contact-page-area .form-area .genric-btn {
@@ -3887,6 +3890,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0 !important;
   font-size: 14px;
   text-transform: uppercase !important;
+  width: 100%;
 }
 
 .contact-page-area .form-area .genric-btn:hover {
@@ -3894,10 +3898,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #f9d700 !important;
 }
 
-@media (max-width: 991px) {
-  .contact-page-area .address-wrap {
-    margin-bottom: 60px;
-  }
+.contact-page-area .address-wrap {
+  margin-bottom: 40px;
 }
 
 .contact-page-area .address-wrap .single-contact-address {
@@ -3907,18 +3909,44 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .contact-page-area .address-wrap .single-contact-address h5 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 5px;
-  
 }
 
 .contact-page-area .address-wrap .single-contact-address .lnr {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 500;
   color: #f9d700;
-  margin-right: 30px;
-  
-  
+  margin-right: 15px;
+}
+
+@media (max-width: 767px) {
+  .contact-page-area .map-wrap {
+    margin-bottom: 100px;
+  }
+
+  .contact-page-area .contact-btns {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .contact-page-area .form-area input,
+  .contact-page-area .form-area textarea {
+    font-size: 12px;
+  }
+
+  .contact-page-area .form-area textarea {
+    height: 120px;
+  }
+
+  .contact-page-area .address-wrap .single-contact-address h5 {
+    font-size: 12px;
+  }
+
+  .contact-page-area .address-wrap .single-contact-address .lnr {
+    font-size: 20px;
+    margin-right: 10px;
+  }
 }
 
 /* =================================== */
