@@ -3838,9 +3838,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* =================================== */
 /*  Contact Page Styles
 /* =================================== */
+.contact-section-fix {
+  background-color: #ffffff !important;
+  padding-bottom: 80px;
+}
+
 .contact-page-area .map-wrap {
-  margin-bottom: 150px;
+  margin-bottom: 30px;
   text-align: center;
+}
+
+.contact-page-area.contact-section-fix .map-wrap {
+  margin-bottom: 0;
 }
 
 .map-container iframe {
@@ -3922,7 +3931,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 767px) {
   .contact-page-area .map-wrap {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+  }
+
+  .contact-page-area.contact-section-fix .map-wrap {
+    margin-bottom: 30px;
   }
 
   .contact-page-area .contact-btns {
@@ -3955,6 +3968,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*-------- start footer Area -------------*/
 .footer-area {
   background-color: #000000;
+  position: relative;
+  padding-bottom: 80px;
 }
 
 .footer-area h6 {
