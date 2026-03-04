@@ -25,6 +25,25 @@
 			<link rel="stylesheet" href="css/animate.min.css">
 			<link rel="stylesheet" href="css/jquery-ui.css">			
 			<link rel="stylesheet" href="css/main.css">
+		<style>
+		.services-with-bg { position: relative; overflow: hidden; }
+		.services-with-bg .services-bg-blur {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+			background: url(img/innova1.jpg) center/cover no-repeat;
+			filter: blur(8px); transform: scale(1.05);
+		}
+		.services-with-bg .services-bg-overlay {
+			position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+			background: rgba(0,0,0,0.5);
+		}
+		.services-with-bg .container { position: relative; z-index: 2; }
+		.services-with-bg .section-title h2 { color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+		.services-with-bg .section-title p { color: rgba(255,255,255,0.9); }
+		.services-with-bg .single-service { color: #fff; }
+		.services-with-bg .single-service h3 a { color: #fff !important; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+		.services-with-bg .single-service p { color: rgba(255,255,255,0.9); }
+		.services-with-bg .single-service .lnr { color: #f9d700; }
+		</style>
 		</head>
 		<body>	
 			  <header id="header">
@@ -65,7 +84,9 @@
 			<!-- End banner Area -->	
 
 			<!-- Start services Area -->
-			<section class="services-area section-gap">
+			<section class="services-area section-gap services-with-bg">
+				<div class="services-bg-blur" aria-hidden="true"></div>
+				<div class="services-bg-overlay" aria-hidden="true"></div>
 				<div class="container">
 					<div class="row section-title">
 						<h2>Taxi Fleet – Innova, Tavera, Force Traveller, Etios</h2>
@@ -127,7 +148,7 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-lg-6 about-left">
-							<img class="img-fluid" src="img/innova1.jpg" alt="Innova taxi for outstation trips from Kasaragod" loading="lazy">
+							<!-- class="img-fluid" src="img/innova1.jpg" alt="Innova taxi for outstation trips from Kasaragod" loading="lazy">
 						</div>
 						<!--<div class="col-lg-6 about-right">
 							<h1>Globally Connected
